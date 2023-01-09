@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #3498db
+}
+
+.Copyright {
+    font-weight: bold;
+    color: #44d9ed;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: sans-serif;
+    /* background: linear-gradient(to right, #ffe000, #799f0c); */
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.main {
+    margin: 80px auto 0;
+    /* max-height: 300px; */
+    width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    padding: 20px;
+}
+
+
+.todo-add-form {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+
+}
+
+.todo-add-form .name {
+    width: 48%;
+
+    height: 50px;
+    margin: 2px 0;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #28c4d8;
+    /* border-bottom-color: #0093E9; */
+    padding: 10px;
+    font-size: 1.8rem;
+    animation: 0.25s;
+}
+
+.todo-add-form .name:focus {
+    animation: slideClode 1.25s infinite;
+}
+
+@keyframes slideClode {
+    0% {
+        border: 2px solid #28c4d8;
+    }
+
+    10% {
+        border: 2px solid #288fd8;
+    }
+
+    20% {
+        border: 2px solid #4528d8;
+    }
+
+    30% {
+        border: 2px solid #8f28d8;
+    }
+
+    40% {
+        border: 2px solid #d82857;
+    }
+
+    50% {
+        border: 2px solid #d82828;
+    }
+
+    60% {
+        border: 2px solid #d87428;
+    }
+
+    70% {
+        border: 2px solid #d8cc28;
+    }
+
+    80% {
+        border: 2px solid #4ed828;
+    }
+
+    90% {
+        border: 2px solid #28d877;
+    }
+
+    100% {
+        border: 2px solid #28d8bb;
+    }
+}
+
+.submit {
+    cursor: pointer;
+    width: 100%;
+    background-color: #28c4d8;
+    color: #fff;
+    height: 50px;
+    margin: 4px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.9rem;
+}
+
+.fullname {
+    display: flex;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    font-weight: bold;
+    /* justify-content: center; */
+    border: 2px solid transparent;
+    border-bottom-color: #0093E9;
+    opacity: 0.9;
+    padding-bottom: 10px;
+
+}
+
+.fullname-last {
+    margin-left: 100px;
+}
+
+.fullname-first {
+    margin-left: 130px;
+}
+
+.todo-list {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.todo-item {
+    display: flex;
+    font-size: 1.8rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-bottom-color: #ccc;
+    padding: 10px 0;
+    align-items: center;
+    position: relative;
+}
+
+.todo-last-name {
+    position: relative;
+    left: 100px;
+}
+
+.todo-first-name {
+    position: absolute;
+    margin-left: 325px;
+}
+
+#delete {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+#delete:hover {
+    opacity: 0.6;
+}
